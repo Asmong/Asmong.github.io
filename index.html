@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -14,6 +14,21 @@
 <input type="text" id="numberOfDicks">
 <button onclick="showMeThatDick()">Показать писюн(ы)</button>
 <br>
+  
+<body style="text-align: center; font-family: Helvetica;">
+<h1>Калькулятор роста</h1>
+<input type="text" id="numberOfDicks">
+<button onclick="addVal()">Рассчитать</button>
+<br>
+
+<textarea disabled id="displaytext"></textarea>
+
+<script>
+function addVal() {
+let ro = document.querySelector('#numberOfDicks').value;
+document.getElementById("displaytext").innerHTML = "Ваш рост: "+ ro ;
+};
+</script>
 
 <script>
 function showMeThatDick() {
