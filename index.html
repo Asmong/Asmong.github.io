@@ -10,10 +10,25 @@
 </head>
 
 <body style="text-align: center; font-family: Helvetica;">
+<h1>Калькулятор роста</h1>
+<input type="text" id="faf">
+<button onclick="addVal()">Рассчитать</button>
+<br>
+
+<textarea disabled id="displaytext"></textarea>
+
+<body style="text-align: center; font-family: Helvetica;">
 <h1>Писюны</h1>
 <input type="text" id="numberOfDicks">
 <button onclick="showMeThatDick()">Показать писюн(ы)</button>
 <br>
+
+<script>
+function addVal() {
+let num = document.querySelector('#faf').value;
+document.getElementById("displaytext").innerHTML = "Ваш рост: "+ num ;
+};
+</script>
 
 <script>
 function showMeThatDick() {
